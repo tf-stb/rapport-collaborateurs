@@ -92,6 +92,9 @@
             class="form-control mb-3"
             accept=".xlsx, .xls"
           />
+
+          <span class="text-muted" id="help">Où trouver le fichier? <a href="https://tf-stb.xdock.de/Reports/Reports" target="_blank">Reports ->  Informations sur les palettes</a> Sélectionnez la période de temps et téléchargez un fichier de type Excel. Cet outil l'analysera.</span>
+
           <!-- Date Range Display -->
           <div id="dateRange" class="date-range"></div>
           <!-- Chart Containers -->
@@ -415,6 +418,7 @@
                 // Show table & hide file input and cover image
                 $("#cover").addClass("d-none");
                 $("#fileInput").addClass("d-none");
+                $("#help").addClass("d-none");
                 $("#workerTable").removeClass("d-none");
               });
             };
